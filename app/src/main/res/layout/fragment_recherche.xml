@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road"
+    tools:context=".client.recherche.FormDestination">
+
+    <TextView
+        android:id="@+id/textViewDebut"
+        android:layout_width="163dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="176dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Trouvez votre destination"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="196dp"
+        android:layout_height="214dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_question"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/envMer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La mer"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/envVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La ville"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/envForet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le forêt"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/envDesert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le désert"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/envMont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La montagne"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextBudget"
+        android:layout_width="249dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/edit"
+        android:hint="Quel est votre budget ?"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:gravity="center_horizontal"
+        android:text="Quel type d'environnement ?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextFin"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit"
+        android:drawableEnd="@drawable/ic_baseline_calendar"
+        android:drawableRight="@drawable/ic_baseline_calendar"
+        android:hint="Fin"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFin"
+        android:layout_width="167dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="176dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDebut"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/edit"
+        android:drawableEnd="@drawable/ic_baseline_calendar"
+        android:drawableRight="@drawable/ic_baseline_calendar"
+        android:hint="Début"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/affichage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group1"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_question"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="203dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/affichage"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/edit_text"
+        android:text="Confirmer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#A300BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBudget"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/deconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Déconnexion"
+        android:textColorLink="#A300BCD4"
+        app:backgroundTint="#A300BCD4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
